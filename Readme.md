@@ -32,12 +32,13 @@ eg. npx parcel index.html
 
 ## 5. What is difference between dependencies vs devDependencies?
 Dependencies : dependencies that your project needs to run, eg. like in react and react-dom, we use hooks, states, etc from react.
-They are installed transitively(if A depends on B depends on C, npm install on A will install A and B both);
+They are installed transitively(if A depends on B depends on C, npm install on A will install A and B both)
+<br>
 DevDependencies: Dependencies we only need using development like we use parcel to create bundle of our code, and that bundle will upload to servers.<br>
 Another example is test framework like jest, we test our application during development phase only.
 They are not installed transitively
 <br>
-(Reference)[https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie]
+[Reference](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencie)
 
 ## 6. What is Tree Shaking?
 Tree shaking is a term commonly used in the JavaScript context for dead-code elimination.
