@@ -1,3 +1,25 @@
+/**
+ * HMR - HOT MODULE REPLACEMENT
+ * FILE WATCHER ALGORITHM - WRITTEN IN C++
+ * 
+ * Create Server
+ * MINIFY
+ * BUNDLER
+ * CLEANING OUR CODE
+ * Dev build
+ * Super fast production build
+ * Image Optimization
+ * Compression
+ * Handle Port number
+ * Cache while development
+ * Compatible with older version of browser
+ * HTTPS on dev 
+ * Consistent hashing algorithm to cache thing up
+ * Zero Configuration
+ */
+
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const heading1 = React.createElement("h1",{
     id:"title",
