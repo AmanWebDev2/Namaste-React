@@ -1,0 +1,5 @@
+1. what is emmet?
+2. what is cdn?
+3. library and framework?
+4. what is crossorigin in script tag ?
+5. async and differ in js
