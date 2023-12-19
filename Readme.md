@@ -90,5 +90,4 @@ minor : backward compatibility, old functionality deprecated but operational.
 pacth : bug fix
 
 ```
-<br>
 [Reference](https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json)
