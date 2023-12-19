@@ -78,3 +78,17 @@ It is not a good idea to push node_modules folder on git, beacause it is quite h
 
 ## 11. What is browerlists?
 It is a tool that allows specifying which browser should be supported by our frontend apps by specifying queries in a config file. By using Browserlist, transpiler/bundlers know what browsers you want to support, so they can group browsers in different categories and generate separate bundles.
+
+## ^ caret and ~ tilda in node version
+```
+~version :  update all future patch version.
+^version : upadate all minor/patch version.
+
+eg. major.minor.patch
+major : breaking changes
+minor : backward compatibility, old functionality deprecated but operational.
+pacth : bug fix
+
+```
+<br>
+[Reference](https://stackoverflow.com/questions/22343224/whats-the-difference-between-tilde-and-caret-in-package-json)
