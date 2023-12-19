@@ -54,3 +54,17 @@ Hot Module Replacement (HMR) exchanges, adds, or removes modules while an applic
 4. The runtime synchronously applies the updates.
 
 ## 8. What is `.gitignore`? What should we add and not add into it?
+The gitignore file is a text file which tells git which files or folder to ignore in a project.Those file or folder which can be generate on server should be put inside git.
+for eg. node_module, parcel-cache, dist, .env etc. 
+<br>
+We should not add Readme, API documentation, test result, personal files etc
+
+## 8. What is the difference between `package.json` and `package-lock.json`
+package.json: It is a metadeta file that describes the project's dependencies, scripts, configuration.<br>
+package-lock.json: It is a file that is generated automatically by npm when a package is installed. It records/lock the exact version of every dependency, including it's sub-dependencies and their version.
+<br>
+The purpose of ```package-lock.json``` is to ensure that the same dependencies are installed consistenly across different environment, such as development and production environment. It also helps to prevent issue with installing different package version, which can lead to confilct and error.
+This meant that when a project was deployed or shared with others, there was a risk that different developers or machines would use different versions of the same dependency, which could cause compatibility issues or unexpected behavior.
+<br>
+[Reference](https://www.atatus.com/blog/package-json-vs-package-lock-json/)
+
