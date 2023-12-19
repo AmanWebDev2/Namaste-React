@@ -63,8 +63,18 @@ We should not add Readme, API documentation, test result, personal files etc
 package.json: It is a metadeta file that describes the project's dependencies, scripts, configuration.<br>
 package-lock.json: It is a file that is generated automatically by npm when a package is installed. It records/lock the exact version of every dependency, including it's sub-dependencies and their version.
 <br>
-The purpose of ```package-lock.json``` is to ensure that the same dependencies are installed consistenly across different environment, such as development and production environment. It also helps to prevent issue with installing different package version, which can lead to confilct and error.
+The purpose of ```package-lock.json``` is to ensure that the same dependencies are installed consistently across different environment, such as development and production environment. It also helps to prevent issue with installing different package version, which can lead to confilct and error.
 This meant that when a project was deployed or shared with others, there was a risk that different developers or machines would use different versions of the same dependency, which could cause compatibility issues or unexpected behavior.
 <br>
 [Reference](https://www.atatus.com/blog/package-json-vs-package-lock-json/)
 
+## 9. Why should I not modify `package-lock.json`?
+When we install a library using npm, it generates the node_modules folder which contains some functions and methods of that library, it also contains the sub-dependencies folder that our library required.
+<br>
+It is not a good idea to push node_modules folder on git, beacause it is quite heavy. We can regenerate node_module folder using package.json. 
+
+## 10. What is the `dist` folder?
+``` npx parcel build index.html ``` It create a dist folder which contains compressed code.
+
+## 11. What is browerlists?
+It is a tool that allows specifying which browser should be supported by our frontend apps by specifying queries in a config file. By using Browserlist, transpiler/bundlers know what browsers you want to support, so they can group browsers in different categories and generate separate bundles.
